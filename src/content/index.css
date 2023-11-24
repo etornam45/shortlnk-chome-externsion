@@ -1,0 +1,97 @@
+.s-popover {
+  position: relative !important;
+  top: -10px !important;
+  display: none !important;
+  color: black !important;
+  appearance: none !important;
+}
+
+.s-link {
+  position: relative !important;
+  display: inline-block !important;
+  overflow: visible !important;
+}
+
+.s-link:hover .s-popover {
+  display: block !important;
+  height: 0 !important;
+  width: 0 !important;
+}
+.s-container {
+  overflow: visible !important;
+  --height: 40px !important;
+
+  position: absolute !important;
+  top: 10px !important;
+
+  width: max-content !important;
+  padding: 5px !important;
+  height: var(--height) !important;
+  padding: 8px !important;
+
+  background: #f8f8f8 !important;
+  background-blend-mode: normal !important;
+
+  border-radius: 8px !important;
+  z-index: 999 !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 8px !important;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2) !important;
+}
+
+.s-popover .s-container div.left {
+  display: flex !important;
+  color: rgb(0, 0, 0) !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.s-container .left h5,
+.s-container .left p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.s-container .left h5 {
+  font-size: 18px !important;
+}
+
+.s-container .left p {
+  font-size: 16px !important;
+  color: rgb(146, 146, 146) !important;
+}
+
+.s-container div.right {
+  color: rgb(0, 0, 0) (221, 111, 111) !important;
+  display: flex !important;
+  align-items: center !important;
+  /* justify-content: center; */
+  box-sizing: content-box !important;
+}
+
+.s-container div.right:hover .circle {
+  background-color: rgb(243, 179, 179) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.s-container div.right .circle {
+  background: rgb(187, 147, 224) !important;
+  height: calc(var(--height) - 15px) !important;
+  width: calc(var(--height) - 15px) !important;
+  border-radius: var(--height) !important;
+  overflow: hidden !important;
+
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 8px !important;
+}
+
+
+
+
